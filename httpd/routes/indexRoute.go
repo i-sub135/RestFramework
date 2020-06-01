@@ -1,20 +1,7 @@
 package routes
 
 import (
-	"rest-framework/httpd/controller"
-	"rest-framework/httpd/response"
-
 	"github.com/gin-gonic/gin"
-)
-
-type (
-	//RestAPI  --
-	RestAPI struct{}
-)
-
-var (
-	resp response.RestResponse
-	ctrl controller.RestController
 )
 
 // IndexRoute  --

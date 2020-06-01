@@ -2,25 +2,14 @@ package controller
 
 import (
 	"rest-framework/httpd/models"
-	"rest-framework/httpd/response"
 
 	"github.com/gin-gonic/gin"
-)
-
-type (
-	// RestController -- reciver Controllrt
-	RestController struct{}
-)
-
-var (
-	resp  response.RestResponse
-	model models.RestModels
 )
 
 // IndexCtrl --
 func (r *RestController) IndexCtrl(res *gin.Context) {
 	out := resp.RespOK(map[string]interface{}{
-		"Services": "new Micro",
+		"Services": "New Micro",
 	})
 	res.JSON(out.Code, out)
 

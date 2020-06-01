@@ -19,6 +19,7 @@ type (
 		Kode string `json:"Kode"`
 		Nama string `json:"Nama"`
 	}
+
 	// WilayahKelurahan -- t_wilayah_Kelurahan on db cw_master
 	WilayahKelurahan struct {
 		Kode string `json:"Kode"`
